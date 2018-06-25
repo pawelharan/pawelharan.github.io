@@ -1,0 +1,401 @@
+* {
+  @include box-sizing(border-box);
+}
+
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+
+p {
+    font-size: 1em;
+}
+
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4
+{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+img {
+    vertical-align: middle;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  border: 0;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+
+
+/*
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.imgs {
+    margin: 0 auto;
+    max-width: 98%;
+    padding: 5em 0;
+}
+
+.imgs img{
+    width: 100%;
+    height: auto;
+    padding: 2em 0;
+}
+
+.description {
+    margin: 0 auto;
+    max-width: 98%;
+    padding-top: 2em;
+}
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*PORTFOLIO*/
+
+
+#portfolio {
+    padding-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 42em) {
+    #portfolio {
+        padding-top: 0;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin-bottom: 5em;
+}
+
+
+.container *{
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 42em) {
+
+     .container {
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
+     box-sizing: border-box;
+     margin-bottom: 8em;
+    }
+}
+
+.item {
+   position: relative;
+   width: 48%;
+   float: left;
+   margin: 1%;
+   }
+
+
+
+
+@media only screen and (max-width: 42em) {
+    .item {
+          width: 80%;
+          margin: 12px 10%;
+    }
+
+}
+
+
+.item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+    position: absolute;
+    text-align: center;
+    top: 44%;
+    width: 100%;
+    font-size: 1em;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    background: #2c2c2c;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+
+
+img {
+    text-align: center;
+}
+
+section {
+    margin: 6em 0;
+}
+
+
+#contact-about {
+     margin: 10px;
+     height: 11em;
+     line-height: 1.2;
+     border-width:4px;
+     border-style:solid;
+     border-color: #333;
+}
+
+@media only screen and (max-width: 48em) {
+    #contact-about {
+          font-size: 90%;
+          height: 22em;
+    }
+
+}
+
+h2 {
+    font-size: 1.25em;
+    font-weight: 600;
+    padding-bottom: 0.8em;
+}
+
+
+.social-icon img {
+    width: 72px;
+    height: auto;
+    margin: 1em 0.5em;
+}
+
+@media only screen and (max-width: 48em) {
+    .social-icon img {
+            width: 42px;
+            height: auto;
+            margin: 2em 0.1em;
+    }
+}
+
+@media only screen and (max-width: 56em) {
+        .social-icon img {
+            width: 49px;
+            height: auto;
+            margin: 1em 0.1em;
+    }
+
+}
+
+.copyright {
+    position: relative;
+    font-size: 0.9em;
+    float: right;
+    margin-right: 1em;
+}
+
+@media only screen and (max-width: 42em) {
+    .copyright {
+        font-size: 0.72em;
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.cookies {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 1em 2em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 42em) {
+    .cookies {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        padding: 1em 2em;
+        font-size: 0.8em;
+    }
+}
+/* Nav
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.navbar {
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    display: block;
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
+    height: 1em;
+    font-size: 1em;
+    width: 100%;
+    background: #fff;
+    z-index: 99;
+    vertical-align: middle;
+}
+
+.brand img {
+    margin-right: 8px;
+}
+
+@media only screen and (max-width: 42em) {
+    .navbar {
+        font-size: 85%;
+    }
+    .brand img {
+        height: 30px;
+        width: auto;
+    }
+}
+
+.brand {
+    bottom: 4px;
+    float: left;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 12px;
+    position: relative;
+}
+
+
+.menu {
+    float:right;
+}
+
+.menu a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #333;
+}
+
+
+.menu > li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    float:left;
+}
+
+
+.menu > li > a{
+	display: block;
+	line-height: 1;
+    padding: 0 12px;
+}
+
+
+
+.sticky {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+
+/* GRID
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Start of "Micro clearfix" */
+
+        .cf { zoom: 1; }
+        .cf:before,
+        .cf:after { content: ""; display: table; }
+        .cf:after { clear: both; }
+
+        /* End of "Micro clearfix" */
+
+
+
+.grid-1-4 {
+    width: 27%;
+    float: left;
+}
+
+.grid-1-3 {
+    width: 33.3333%;
+    margin: 0 auto;
+    min-width: 170px;
+    float: right;
+}
+
+
+@media only screen and (max-width: 48em) {
+    .grid-1-4 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .grid-1-3 {
+        width: 100;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+    }
+}
+
+.row {
+    margin: 1em;
+}
